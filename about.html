@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/782617b79d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="task1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="form.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="row row-cols-1 row-cols-md-3 g-4 ch">
+        <div class="col ">
+          <div class="card h-100 ft ho1">
+            <img class="pd1" src="data:image/png;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title t1">Mission</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 ft ho1 ">
+            <img class="pd1" src="https://thumbs.dreamstime.com/b/world-earth-world-symbol-black-white-world-earth-world-symbol-vector-illustration-graphic-design-144953979.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title t1">Vision</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card  ft ho1">
+            <img class="pd1" src="https://media.istockphoto.com/vectors/red-color-pencil-half-length-draws-a-black-line-vector-id1370846046?b=1&k=20&m=1370846046&s=612x612&w=0&h=DZaWPdL0NYmndnzPFR9RD7lcCfPccb-iQIi2dCxIvvA=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title t1">Acheivements</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card text-center bg-danger ft1">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title ">About Us</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+         <!--<a href="#" class="btn btn-primary">Contact Us</a>-->
+         <i class="fa-brands fa-facebook "></i>
+         <i class="fa-brands fa-instagram "></i>
+         <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+    </body>
+</html>
